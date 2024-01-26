@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-primary {
+    @apply py-[10px] bg-[#5e6ad2] text-white font-semibold rounded-full shadow-md hover:bg-[#6671da] focus:outline-none focus:ring-2 focus:ring-[#5e6ad2] focus:ring-opacity-75;
+  }
+  .btn-secondary {
+    @apply py-[10px] bg-transparent text-white font-semibold border-[1px] border-slate-600 rounded-lg shadow-md focus:outline-none focus:ring-2 focus:ring-slate-300 focus:ring-opacity-75;
+  }
+  .custom-input {
+    @apply appearance-none border border-[#313248] bg-[#151621] text-[13px] placeholder:text-[12px] w-full rounded-md py-2 px-4 leading-7 focus:outline-none focus:border-[#5e6ad2];
+  }
+  .custom-radio {
+    @apply appearance-none !text-[#5e6ad2] bg-transparent  indeterminate:!bg-transparent  border border-gray-300 rounded-md checked:bg-[#5e6ad2] checked:border checked:border-transparent checked:border-gray-300 focus:outline-none focus:ring-0 focus:border-transparent hover:bg-[#5e6ad2] active:bg-[#5e6ad2] h-4 w-4;
+  }
+}
